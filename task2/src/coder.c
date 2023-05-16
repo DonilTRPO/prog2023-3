@@ -2,7 +2,6 @@
 #include <inttypes.h>
 #include "coder.h"
 #include "command.h"
-
 int encode(uint32_t code_point, CodeUnit *code_unit)
 {
     if (code_point < 0x80)
