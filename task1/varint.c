@@ -89,6 +89,8 @@ int main()
     {
         uint8_t compressed[4];
         fread(compressed, sizeof(uint8_t), 1, fpcomp);
+        const uint8_t *curcomp = compressed;
+        uint32_t value = decode_varint(&curcomp);
     }
     fclose(fpcomp);
     return 0;
